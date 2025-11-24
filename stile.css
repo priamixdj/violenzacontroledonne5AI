@@ -1,0 +1,218 @@
+:root {
+    --brand:#d62839;
+    --bg-dark:#000000;
+    --text-light:#ffffff;
+    --shadow:rgba(0,0,0,0.65);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.center{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+
+    color: var(--brand);
+}
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    background: var(--bg-dark);
+    color: var(--text-light);
+    font-weight: bold;
+
+    background-image:
+        linear-gradient(rgba(0,0,0,0.70), rgba(0,0,0,0.70)),
+        url("rosso.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h5{
+color: var(--brand);
+}
+h1, h2, h3 {
+    color: var(--brand);
+    font-weight: bold;
+    text-shadow:
+       -1px -1px 2px var(--shadow),
+        1px -1px 2px var(--shadow),
+       -1px  1px 2px var(--shadow),
+        1px  1px 2px var(--shadow);
+}
+
+.navbar {
+    background-color: var(--bg-dark) !important;
+    border-bottom: 2px solid var(--brand);
+}
+
+.navbar-brand {
+    color: var(--brand) !important;
+    font-weight: 600;
+    text-shadow: 0 0 4px black;
+}
+
+.nav-link {
+    color: var(--text-light) !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: var(--brand) !important;
+}
+
+.navbar-toggler-icon{
+    background-color: #b71f30;
+    border-radius: 5px;
+}
+
+.section-img {
+    border-radius: 10px;
+    border: 2px solid var(--brand);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+    margin: 1.5rem 0;
+    max-width: 100%;
+}
+
+.container-scarpe {
+    width: auto;
+    display: flex;
+    /* border: solid red 2px; */
+    position: relative;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.cont-scarpe {
+    position: inherit;
+    border: solid rgb(255, 0, 0) 2px;
+    width: 330px;
+    height: 330px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 50px 0;
+}
+    .studenti-scarpe {
+        border: none;
+        position: absolute;
+        top: -150px;
+        left: 0;
+        width: 100%;
+    }
+    .cont-text-scarpe {
+        background-color: #00000075;
+        backdrop-filter: blur(2px);
+        border: solid rgba(255, 0, 0, 0.425) 2px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 20px #ff10104f;
+        width: 200px;
+        height: 100%;
+        padding: 10px 10px 0 10px;
+    }
+
+.card-simple {
+    background: #000000;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 1rem;
+    border: 1px solid var(--brand);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+.box-note {
+    background: #0a0a0a;
+    border-left: 4px solid var(--brand);
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.btn-danger {
+    background-color: var(--brand) !important;
+    border: none;
+    font-weight: bold;
+    padding: 0.7rem 1.2rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.btn-danger:hover {
+    background-color: #b71f30 !important;
+}
+
+ul li strong {
+    color: var(--brand);
+}
+.form-control {
+    background: #111;
+    color: var(--text-light);
+    border: 1px solid #333;
+}
+
+.form-control:focus {
+    background: #111;
+    border-color: var(--brand);
+    color: var(--text-light);
+    box-shadow: 0 0 8px var(--brand);
+}
+
+footer {
+    background-color: var(--bg-dark) !important;
+    border-top: 2px solid var(--brand);
+    color: var(--text-light);
+     margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll;
+    }
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+}
+
+
+.carosello {
+    width: 100%;    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#carouselExampleControls {
+    width: 400px;
+    min-height: 550px;
+    /* border: 1px solid #ff0000; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel-inner {
+    height: 550px;
+    overflow: hidden;
+    border-radius: 20px;
+    border: solid var(--brand) 2px;
+}
+.carousel-inner *{
+    min-height: 550px;
+}
+

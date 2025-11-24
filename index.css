@@ -1,0 +1,137 @@
+:root {
+    --brand:#d62839;
+    --bg-dark:#000000;
+    --text-light:#ffffff;
+    --shadow:rgba(0,0,0,0.65);
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+
+    color: var(--brand);
+}
+.bg_logo{
+    position: absolute;
+    z-index: -1;
+}
+html, body {
+    height: 100%;
+}
+body {
+    background: var(--bg-dark);
+    color: var(--text-light);
+    font-weight: bold;
+    overflow-x: hidden;
+}
+
+h5{
+color: var(--brand);
+}
+h1, h2, h3 {
+    color: var(--brand);
+    font-weight: bold;
+    text-shadow:
+       -1px -1px 2px var(--shadow),
+        1px -1px 2px var(--shadow),
+       -1px  1px 2px var(--shadow),
+        1px  1px 2px var(--shadow);
+}
+
+.navbar-toggler-icon{
+    background-color: #b71f30;
+    border-radius: 5px;
+}
+
+
+.navbar {
+    background-color: var(--bg-dark) !important;
+    border-bottom: 2px solid var(--brand);
+}
+
+.navbar-brand {
+    color: var(--brand) !important;
+    font-weight: 600;
+    text-shadow: 0 0 4px black;
+}
+
+.nav-link {
+    color: var(--text-light) !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: var(--brand) !important;
+}
+
+.section-img {
+    border-radius: 10px;
+    border: 2px solid var(--brand);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+    margin: 1.5rem 0;
+    max-width: 100%;
+}
+
+.card-simple {
+    background: #000000;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 1rem;
+    border: 1px solid var(--brand);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+.box-note {
+    background: #0a0a0a;
+    border-left: 4px solid var(--brand);
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.btn-danger {
+    background-color: var(--brand) !important;
+    border: none;
+    font-weight: bold;
+    padding: 0.7rem 1.2rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.btn-danger:hover {
+    background-color: #b71f30 !important;
+}
+
+ul li strong {
+    color: var(--brand);
+}
+.form-control {
+    background: #111;
+    color: var(--text-light);
+    border: 1px solid #333;
+}
+
+.form-control:focus {
+    background: #111;
+    border-color: var(--brand);
+    color: var(--text-light);
+    box-shadow: 0 0 8px var(--brand);
+}
+
+footer {
+    background-color: var(--bg-dark) !important;
+    border-top: 2px solid var(--brand);
+    color: var(--text-light);
+     margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll;
+    }
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+}
